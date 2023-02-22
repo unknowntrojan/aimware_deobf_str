@@ -1,7 +1,7 @@
 # aimware_deobf_str
 
 a small script to help you find strings in the aimware loader and dll binaries.
-it comments xored strings in the binary.
+it comments xored strings in the binary. !IT DOES NOT YET CATCH ALL OF THEM, JUST A SUBSET!
 
 to use it, run `cargo test export_aw`, this will generate two files: `ldr.cmt` and `dll.cmt`, for the loader and dll, respectively.
 now open your binary of choice in IDA, and run the ida_parse.py script file. select the correct cmt file and enjoy your newly added comments.
