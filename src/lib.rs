@@ -39,7 +39,7 @@ pub fn find_patterns(region: &[u8], pattern: &Pattern) -> Vec<usize> {
 }
 
 pub fn get_strings(file: &[u8]) -> Vec<(usize, String)> {
-    let decoder = Decoder::new(MachineMode::LONG_64, AddressWidth::_64).unwrap();
+    let decoder = Decoder::new(MachineMode::LONG_COMPAT_32, AddressWidth::_32).unwrap();
 
     #[derive(Debug, PartialEq, Clone, Copy)]
     enum Location {
